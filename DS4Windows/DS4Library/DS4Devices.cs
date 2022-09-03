@@ -159,6 +159,7 @@ namespace DS4Windows
             new VidPidInfo(NINTENDO_VENDOR_ID, JOYCON_R_PRODUCT_ID, "JoyCon (R)", InputDeviceType.JoyConR, VidPidFeatureSet.DefaultDS4, checkConnection: JoyConDevice.DetermineConnectionType),
             new VidPidInfo(0x7545, 0x1122, "Gioteck VX4", InputDeviceType.DS4), // Gioteck VX4 (no real lightbar, only some RGB leds)
             new VidPidInfo(0x7331, 0x0001, "DualShock 3 (DS4 Emulation)", InputDeviceType.DS4, VidPidFeatureSet.NoGyroCalib | VidPidFeatureSet.VendorDefinedDevice), // Sony DualShock 3 using DsHidMini driver. DsHidMini uses vendor-defined HID device type when it's emulating DS3 using DS4 button layout
+            new VidPidInfo(0x0C12, 0x1E1A, "DoubleShock 4", InputDeviceType.DS4, VidPidFeatureSet.NoGyroCalib), // Third-party DS4 replica, "DoubleShock 4". Wired only controller. No motion data.
         };
 
         public static string devicePathToInstanceId(string devicePath)
